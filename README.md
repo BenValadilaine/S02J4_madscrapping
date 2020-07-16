@@ -1,3 +1,5 @@
+/!\ This project uses ruby version 2.7.0.
+
 This is the second project of week two of The Hacking Project.
 The purpose of this app is to scrap web content (once again, only for the sake of learning the way to do it).
 
