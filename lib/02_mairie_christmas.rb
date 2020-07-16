@@ -1,0 +1,5 @@
+require 'nokogiri'
+require 'pry'
+require 'rspec'
+require 'rubocop'
+require 'open-uri'
