@@ -6,8 +6,6 @@ describe "The html code of the web page" do
   end
 end
 
-
-
 describe "Test on the final hash." do
   final_hash = get_hash
   it "should return a hash containing symbols and prices of crypto-currencies." do
