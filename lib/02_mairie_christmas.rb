@@ -40,6 +40,7 @@ end
 
 #This method's purpose is to launch other methods.
 def perform
+  #Here we get the email list through the automated aggregation of two methods : get_townhall_urls & get_townhall_email.
   emails_list = Array.new
   get_townhall_urls.each do |url|
     emails_list << get_townhall_email(url)
@@ -51,8 +52,9 @@ def perform
   #p composed_hash
 
   #Here we decompose both hashes into one big array.
-  final_hash = composed_hash.each_slice(1).map(&:to_h)
-  p final_hash
+  final_array = composed_hash.each_slice(1).map(&:to_h)
+  puts final_array
+  return final_array
 end
 
 perform
